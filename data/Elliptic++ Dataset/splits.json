@@ -1,0 +1,13 @@
+{
+  "train_time_end": 20,
+  "val_time_end": 30,
+  "train_nodes": 18889,
+  "val_nodes": 8016,
+  "test_nodes": 19659,
+  "total_nodes": 203769,
+  "total_edges": 234355,
+  "num_features": 93,
+  "train_fraud": 1771,
+  "val_fraud": 1183,
+  "test_fraud": 1591
+}

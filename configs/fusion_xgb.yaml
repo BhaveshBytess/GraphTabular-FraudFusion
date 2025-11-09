@@ -1,0 +1,51 @@
+experiment: "graph-tabular-fusion"
+seed: 42
+device: "cuda"   # or "cpu"
+
+baseline:
+  provenance: "docs/baseline_provenance.json"
+  metrics_csv: "reports/metrics_summary.csv"
+  reuse_splits: true
+
+data:
+  root: "data/Elliptic++ Dataset"
+  features: "txs_features.csv"
+  labels: "txs_classes.csv"
+  edges: "txs_edgelist.csv"
+  splits_file: "splits.json"  # will be generated from temporal logic
+  use_local_only: true      # Protocol A (true) or Protocol B (false)
+
+embed:
+  encoder: "node2vec"       # node2vec | graphsage_export | graphsage_train
+  out_dim: 64               # 16/32/64/128
+  graphsage_ckpt: ""        # path if using export
+  save_path: "data/embeddings.parquet"
+  
+  # Node2Vec specific parameters
+  node2vec:
+    walk_length: 80
+    context_size: 10
+    walks_per_node: 10
+    num_negative_samples: 1
+    p: 1.0
+    q: 1.0
+    sparse: true
+
+fusion:
+  model: "xgb"              # xgb | mlp
+  xgb:
+    n_estimators: 800
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    eval_metric: "aucpr"
+    early_stopping_rounds: 50
+    scale_pos_weight: null  # computed from data if null
+
+eval:
+  recall_k_fracs: [0.005, 0.01, 0.02]
+  save_plots: true
+
+logging:
+  out_dir: "reports"

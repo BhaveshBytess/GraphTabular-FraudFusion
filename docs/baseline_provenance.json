@@ -1,0 +1,20 @@
+{
+  "baseline_repo": {
+    "name": "FRAUD-DETECTION-GNN",
+    "url": "https://github.com/BhaveshBytess/Revisiting-GNNs-FraudDetection",
+    "commit_sha": "ccab3f9ff99c1c84090a396015ed695fa8394c39",
+    "commit_date": "2025-11-09 02:39:13 +0530",
+    "cloned_at": "2025-11-09T09:35:00Z"
+  },
+  "imported_artifacts": {
+    "metrics_summary": "reports/metrics_summary.csv",
+    "utilities": "src/utils/* (seed.py, metrics.py, logger.py)",
+    "split_logic": "src/data/splits.py"
+  },
+  "notes": [
+    "This fusion extension reuses baseline splits and metrics",
+    "No baseline models are retrained in this repository",
+    "Temporal split logic creates splits dynamically from timestamps",
+    "All fusion work follows PROJECT_SPEC v2"
+  ]
+}

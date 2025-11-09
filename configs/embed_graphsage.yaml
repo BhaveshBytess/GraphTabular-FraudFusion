@@ -1,0 +1,19 @@
+experiment: "embeddings-graphsage-export"
+seed: 42
+device: "cuda"
+
+data:
+  root: "data/Elliptic++ Dataset"
+  features: "txs_features.csv"
+  labels: "txs_classes.csv"
+  edges: "txs_edgelist.csv"
+
+graphsage:
+  checkpoint_path: ""  # path to baseline GraphSAGE checkpoint
+  layer_to_export: -2  # penultimate layer (-1 = last, -2 = second to last)
+  embedding_dim: 64    # expected output dimension
+  
+output:
+  save_path: "data/embeddings.parquet"
+  save_format: "parquet"  # parquet | npy
+  save_txid_mapping: true
