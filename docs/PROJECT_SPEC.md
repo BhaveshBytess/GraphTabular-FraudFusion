@@ -1,9 +1,3 @@
-Perfect—here’s your **trimmed, extension-only** spec for **Direction B** that *reuses* your baseline repo outputs and focuses **only** on the fusion model. It keeps your structure, but removes re-training of old baselines/GNNs and adds clear pointers to import prior artifacts.
-
-You can paste this as `docs/PROJECT_SPEC.md` in the new repo (`graph-tabular-fusion`).
-
----
-
 # PROJECT_SPEC (v2 — Graph–Tabular Fusion, **Extension of Baseline**)
 
 ## 0) Purpose (single source of truth)

@@ -5,7 +5,9 @@
 **Project:** `Graph–Tabular Hybrid Model` (GNN–XGB Fusion)  
 **Status:** 🧩 **IN PROGRESS** (Phase II of Elliptic++ Study — extending baselines)  
 **Goal:** Build, train, and evaluate **hybrid models** that fuse **graph embeddings** (from GraphSAGE/GCN) with **tabular ML learners** (XGBoost, MLP) on the **Elliptic++** dataset.  
-**Purpose:** Extend the baseline GNN work into practical, interpretable models — combining relational learning with tabular performance for real-world fraud detection use cases.  
+**Purpose:** Extend the baseline GNN work into practical, interpretable models — combining relational learning with tabular performance for real-world fraud detection use cases.
+
+**🎯 Notebook Target Environment:** All notebooks are designed for **Kaggle** execution. Code cells, file paths, and dependencies are optimized for Kaggle's environment and dataset mounting structure.
 
 ---
 
