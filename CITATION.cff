@@ -1,0 +1,90 @@
+# Citation
+
+## BibTeX
+
+If you use this work in your research, please cite:
+
+```bibtex
+@software{kumar2025graphtabular,
+  author       = {Kumar, Bhavesh},
+  title        = {Graph-Tabular Fusion on Elliptic++ Bitcoin Fraud Detection: When Node2Vec Embeddings Don't Help},
+  month        = nov,
+  year         = 2025,
+  publisher    = {GitHub},
+  version      = {v1.0.0},
+  url          = {https://github.com/BhaveshBytess/GraphTabular-FraudFusion}
+}
+```
+
+## APA Style
+
+Kumar, B. (2025). *Graph-Tabular Fusion on Elliptic++ Bitcoin Fraud Detection: When Node2Vec Embeddings Don't Help* (Version 1.0.0) [Computer software]. GitHub. https://github.com/BhaveshBytess/GraphTabular-FraudFusion
+
+## MLA Style
+
+Kumar, Bhavesh. *Graph-Tabular Fusion on Elliptic++ Bitcoin Fraud Detection: When Node2Vec Embeddings Don't Help*. Version 1.0.0, GitHub, Nov. 2025, https://github.com/BhaveshBytess/GraphTabular-FraudFusion.
+
+## Chicago Style
+
+Kumar, Bhavesh. 2025. "Graph-Tabular Fusion on Elliptic++ Bitcoin Fraud Detection: When Node2Vec Embeddings Don't Help." Version 1.0.0. GitHub. November 2025. https://github.com/BhaveshBytess/GraphTabular-FraudFusion.
+
+---
+
+## Related Citations
+
+### Dataset
+
+If you use the Elliptic++ dataset, please also cite:
+
+```bibtex
+@article{weber2019anti,
+  title={Anti-money laundering in bitcoin: Experimenting with graph convolutional networks for financial forensics},
+  author={Weber, Mark and Domeniconi, Giacomo and Chen, Jie and Weidele, Daniel Karl I and Bellei, Claudio and Robinson, Tom and Leiserson, Charles E},
+  journal={arXiv preprint arXiv:1908.02591},
+  year={2019}
+}
+```
+
+### Baseline Project
+
+This work extends the baseline project. Please also cite:
+
+```bibtex
+@software{kumar2025frauddetection,
+  author       = {Kumar, Bhavesh},
+  title        = {Revisiting Graph Neural Networks for Fraud Detection on Elliptic++},
+  year         = 2025,
+  publisher    = {GitHub},
+  url          = {https://github.com/BhaveshBytess/Revisiting-GNNs-FraudDetection},
+  note         = {DOI: 10.5281/zenodo.17560930}
+}
+```
+
+---
+
+## Key Finding
+
+> **Main Result:** Graph embeddings (Node2Vec) provide minimal incremental benefit (~2% decrease) when combined with rich tabular features on Elliptic++ fraud detection, validating that tabular features already effectively encode graph structure.
+
+**Performance:**
+- Baseline XGBoost (tabular-only): PR-AUC 0.6689
+- Fusion (XGBoost + Node2Vec): PR-AUC 0.6555
+- Difference: -0.0134 (-2%)
+
+**Conclusion:** Rich tabular features > explicit graph embeddings for this task.
+
+---
+
+## Acknowledgments
+
+- **Elliptic** for the Elliptic++ dataset
+- **Baseline project** for splits, metrics, and foundational work
+- **PyTorch Geometric**, **XGBoost**, **NetworkX**, and **Gensim** communities
+
+---
+
+## License
+
+This work is licensed under the MIT License. See [LICENSE](LICENSE) file for details.
+
+The Elliptic++ dataset is subject to its own terms and conditions. Please refer to the original dataset publication.

@@ -1,0 +1,76 @@
+{
+  "title": "Graph-Tabular Fusion on Elliptic++ Bitcoin Fraud Detection: When Node2Vec Embeddings Don't Help",
+  "description": "A scientifically rigorous investigation demonstrating that graph embeddings (Node2Vec) provide minimal incremental benefit when combined with rich tabular features for Bitcoin fraud detection on the Elliptic++ dataset. This work validates that tabular features already effectively encode graph structure, making explicit graph embeddings redundant. Key finding: XGBoost baseline (PR-AUC 0.6689) outperforms XGBoost+Node2Vec fusion (PR-AUC 0.6555) by 2%. Includes complete reproducible pipeline, leakage-free temporal evaluation, publication-quality visualizations, and honest negative result reporting.",
+  "creators": [
+    {
+      "name": "Kumar, Bhavesh",
+      "affiliation": "Independent Researcher",
+      "orcid": ""
+    }
+  ],
+  "contributors": [],
+  "keywords": [
+    "graph neural networks",
+    "fraud detection",
+    "xgboost",
+    "node2vec",
+    "graph embeddings",
+    "bitcoin",
+    "elliptic dataset",
+    "machine learning",
+    "graph machine learning",
+    "tabular data",
+    "feature engineering",
+    "pytorch geometric",
+    "blockchain analysis",
+    "negative results",
+    "reproducible research",
+    "temporal evaluation",
+    "leakage prevention",
+    "fusion models"
+  ],
+  "license": {
+    "id": "MIT"
+  },
+  "upload_type": "software",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/BhaveshBytess/GraphTabular-FraudFusion",
+      "relation": "isSupplementTo"
+    },
+    {
+      "scheme": "doi",
+      "identifier": "10.5281/zenodo.17560930",
+      "relation": "isPartOf",
+      "resource_type": "software"
+    },
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/BhaveshBytess/Revisiting-GNNs-FraudDetection",
+      "relation": "isPartOf"
+    },
+    {
+      "scheme": "arxiv",
+      "identifier": "arXiv:1908.02591",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    }
+  ],
+  "references": [
+    "Weber, M., Domeniconi, G., Chen, J., Weidele, D. K. I., Bellei, C., Robinson, T., & Leiserson, C. E. (2019). Anti-money laundering in bitcoin: Experimenting with graph convolutional networks for financial forensics. arXiv preprint arXiv:1908.02591.",
+    "Kumar, B. (2025). Revisiting Graph Neural Networks for Fraud Detection on Elliptic++. GitHub. DOI: 10.5281/zenodo.17560930"
+  ],
+  "notes": "This work extends the baseline fraud detection project by evaluating graph-tabular fusion approaches. The key finding is a negative result: graph embeddings don't improve performance when tabular features already encode graph structure. This demonstrates the importance of baseline comparisons and feature analysis before applying complex graph methods. Complete reproducible pipeline with leakage-free temporal evaluation included.",
+  "version": "v1.0.0",
+  "language": "eng",
+  "communities": [
+    {
+      "identifier": "machine-learning"
+    },
+    {
+      "identifier": "graph-neural-networks"
+    }
+  ]
+}
