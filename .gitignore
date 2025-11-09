@@ -1,43 +1,61 @@
+# Dataset (too large, user must download)
+data/Elliptic++ Dataset/
+
+# Generated embeddings (reproducible)
+data/embeddings.parquet
+
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
+*.class
 *.so
 .Python
-*.egg-info/
-dist/
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb_checkpoints
-
-# Data
-data/Elliptic++ Dataset/*.csv
-data/Elliptic++ Dataset/*.txt
-data/*.parquet
-data/*.npy
-
-# Models
-checkpoints/*.pt
-checkpoints/*.pth
-*.pkl
-
-# Logs
-*.log
-logs/
+# Virtual environments
+venv/
+ENV/
+env/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# OS
+*~
 .DS_Store
-Thumbs.db
 
-# Environment
-.env
-venv/
-env/
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Model checkpoints (large files)
+*.pth
+*.pt
+*.ckpt
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Internal development docs (moved to .github)
+.github/internal-docs/
